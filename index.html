@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CMU Mindfulness Room</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    
+    <body>    
+        <header id="home">
+            <div id="navigation">
+                 <a href="index.html">
+                    <img src="images/logo.png" id="logo">
+                </a>
+                <nav>
+                    <ul class="menu" id="myTopnav">
+                        <li><a href="index.html" style="color:#e1bc23">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="stories.html">Stories</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li class="icon"><a href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li>
+                    </ul>
+                </nav>
+            </div>   
+            <div id="homepageIntro">
+                    <p>Dream big.</p><div class="clear"></div>
+                    <p>Dream without fear.</p>
+            </div>
+        </header>
+        <article class="home">
+           <h2>Welcome to the Mindfulness Room at CMU</h2>
+           
+           <h4>This is a place where you...</h4>
+            <section id="can">
+                <p>can</p>
+               
+                    <ul>
+                        <li>Meditate</li>
+                        <li>Nap</li>
+                        <li>Relax</li>
+                        <li>Read</li>
+                        <li>Refresh</li>
+                    </ul>
+              
+            </section>
+            <section id="cannot">
+                <p>can't</p>
+               
+                    <ul>
+                        <li>Do homework</li>
+                        <li>Use technology</li>
+                        <li>Hold meetings</li>
+                        <li>Talk loudly</li>
+                        <li>Disrupt others</li>
+                    </ul>
+               
+            </section>
+        </article>
+        <div class="clear"></div>
+        <footer>
+            <p>Copyright © 2016 Minfulness Room. Design & Code by Lu, Minrui, Xiaonan</p>
+        </footer>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "menu"){
+                    x.className += " responsive";
+                } else {
+                    x.className = "menu";
+                }
+            }  
+        </script>
+    </body>
+</html>

@@ -1,0 +1,1137 @@
+@import 'reset.css';
+@import url('https://fonts.googleapis.com/css?family=Poiret+One&subset=cyrillic,latin-ext');
+
+html {
+    font-family: 'Roboto', sans-serif;
+    background:#F4F4F4;
+}
+
+.clear {
+    clear:both;
+}
+
+/*header styles are same to all pages*/
+/*----------starts here----------*/
+header{
+    height: 85vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+header#home {
+    background-image: url("../images/Homepage.jpeg");
+}
+
+header#eventsHeader {
+    background-image: url("../images/Events.jpg");
+}
+
+header#resourcesHeader {
+    background-image: url("../images/Resources.JPG");
+}
+
+header#stories{
+    background-image: url("../images/stories.jpg");
+}
+
+header#about{
+    background-image: url("../images/About.JPG");
+}
+
+header#contact{
+    background-image: url("../images/Contact.jpeg");
+}
+
+/* the following code is same to all pages*/
+
+header div#navigation {
+    height: 6vh;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.6;
+    padding: 1.5rem;
+    position: fixed;
+    z-index: 1;
+}
+
+header div img{
+    float: left;
+    width: 120px;
+}
+
+header div nav{
+    width: 60%;
+    float: left;
+    margin-top: 1.5rem;
+    margin-left: 15%;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+header nav ul li{
+    display: inline-block;
+    margin-right: 8%;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    /*margin-right: 5%;*/
+    transition: 0.1s ease-in all;
+    position: relative;
+    padding-bottom: 0.3rem;
+}
+
+header nav ul li a:hover{
+    opacity: 1;
+}
+
+header nav ul li a:after{
+    content: "";
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    right: 40%;
+    width: 20%;
+    border-bottom: 0.2rem solid #f4f4f4;
+    transition: all ease-in 0.3s;
+}
+
+header nav ul li a:hover:after{
+    left: 0;
+    width: 100%;
+    opacity: 1;
+    transition: all ease-in 0.3s;
+}
+
+.icon{
+    display: none;
+}
+
+header div#homepageIntro {
+    float: right;
+    margin-right: 10%;
+    margin-top: 55vh;
+}
+
+div#homepageIntro p{
+    opacity: 0.85;
+    position: relative;
+    font-weight: bold;
+    font-size: 7vw;
+    margin-bottom: 5rem;
+    color: white;
+}
+
+header .subpageIntro{
+    float: right;
+    margin-right: 15vh;
+    margin-top: 50vh; 
+    margin-bottom: 5vh;
+    height:auto;
+    width: 30vw;
+    background-color: #000;
+    opacity: 0.6;
+    z-index: 0;
+    padding: 1rem;
+}
+
+header .subpageIntro p{
+    opacity: 1;
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 100;
+    
+    color: white;
+    z-index: 1;
+    font-family: 'Poiret One', cursive;
+    line-height: 1.8rem;
+}
+
+/*----------header ends here----------*/
+
+article {
+    width:95%;
+    margin:0 auto;
+    max-width:1080px;
+}
+
+section {
+    margin:0.5rem;
+    padding:2rem;
+}
+
+h1{
+    font-weight:700;
+    font-size:1.7rem;
+    text-decoration: none;
+    color:black;
+}
+
+h2{
+    font-weight:700;
+    font-size:1.3rem;
+    padding-bottom:0.5rem;
+    text-decoration: none;
+    color:black;
+}
+
+h4{
+    font-weight: lighter;
+}
+
+p {
+    font-weight:lighter;
+    font-size:1rem;
+    line-height:1.5rem;
+    text-decoration: none;
+    color:black;
+}
+
+/*-----------home page-----------*/
+#can {
+    display: inline-block;
+    width: 35%;
+    float:left;
+    height:150px;
+    text-align: center;
+}
+
+#can p,
+#cannot p{
+    font-size: 1.5rem;
+    font-family: 'Poiret One', cursive;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+
+
+#cannot {
+    display: inline-block;
+    width: 35%;
+    height:150px;
+    margin-left:100px;
+    text-align: center;
+}
+
+#can ul li,
+#cannot ul li{
+    margin-bottom: 0.8rem;
+    font-size:1rem;
+}
+
+.home h2 {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: 'Poiret One', cursive;
+}
+
+.home h4 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+/*-----------About Page-----------*/
+.about {
+    padding:1.5rem;
+    background:#fff;
+    margin:0.5rem;
+    width:70vw;
+}
+
+.about p{
+    width: 35vw;
+    text-align: justify;
+    margin-left: 35vw;
+}
+
+#room{
+    width: 33vw;
+    height: auto;
+    float: left;
+}
+
+#divFounder p{
+    margin: 1rem auto 0 auto;
+}
+
+#divFounder{
+    text-align: center;
+}
+
+#founder {
+    width: 30vw;
+    height: auto;
+    margin: 0 auto 2rem auto;
+}
+
+.aboutsmallcard {
+    margin:0.5rem 0.9% 0.5rem 0.9% ;
+    position: relative;
+    width:31.5%;
+    height: 20rem;
+    float:left;
+    overflow-y: auto;
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+    z-index: 0;
+}
+
+.aboutinfo {
+    padding:1.5rem;
+}
+
+.abouth2 {
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    font-weight: 300; 
+}
+
+.abouth3 {
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 300; 
+}
+
+.about p{
+    padding-bottom:1rem;
+}
+
+div#aboutpic1{
+    background-image: url("../images/artifacts/Tapestry.png");
+    background-position:center center;
+    background-size:cover;
+    width:100%;
+    height:50%;
+}
+
+div#aboutpic3{
+    background-image: url("../images/artifacts/books.jpeg");
+    background-position:center center;
+    background-size:cover;
+    width:100%;
+    height:50%;
+}
+
+div#aboutpic4{
+    background-image: url("../images/artifacts/whiteboard.png");
+    background-position:center center;
+    background-size:cover;
+    width:100%;
+    height:50%;
+}
+
+div#aboutpic5{
+    background-image: url("../images/artifacts/scrapbook.png");
+    background-position:center center;
+    background-size:cover;
+    width:100%;
+    height:50%;
+}
+
+div#aboutpic6{
+    background-image: url("../images/artifacts/woodenBench.png");
+    background-position:center center;
+    background-size:cover;
+    width:100%;
+    height:50%;
+}
+
+div#aboutpic7{
+    background-image: url("../images/artifacts/canvas.jpeg");
+    background-position:center center;
+    background-size:cover;
+    width:100%;
+    height:50%;
+}
+
+#signiture {
+    text-align:right;
+}
+
+/*-----------Events Page-----------*/
+
+.smallcard {
+    margin:0.5rem 0.9% 0.5rem 0.9% ;
+    position: relative;
+    width:31.5%;
+    height: 20rem;
+    float:left;
+    overflow-y: auto;
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+    z-index: 0;
+    cursor: pointer;
+}
+
+div.smallcard:hover {
+    -moz-box-shadow:0px 5px 15px #ABABAB; 
+    -webkit-box-shadow:0px 5px 15px #ABABAB; box-shadow:0px 5px 15px #ABABAB;
+    transform:translateY(-4px);
+    transition:0.2s ease-in;
+}
+
+.eventinfo a{
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: #b0b0b0;
+}
+
+
+#events div#eventpic1{
+    background-image: url("../images/PawsToRelax.jpg");
+    background-position:center center;
+    background-size:cover;
+    width:100%;
+    height:40%;
+}
+
+#events div#eventpic2{
+    background-image: url("../images/zensational.jpg");
+    background-position:center center;
+    background-size:cover;
+    width:100%;
+    height:40%;
+}
+
+#events div#eventpic3{
+    background-image: url("../images/MidSpa.jpg");
+    background-position:center center;
+    background-size:cover;
+    width:100%;
+    height:40%;
+}
+
+#events div#eventpic4{
+    background-image: url("../images/BunniesToRelax.jpg");
+    background-position:center center;
+    background-size:cover;
+    width:100%;
+    height:40%;
+}
+
+#events div#eventpic5{
+    background-image: url("../images/FamilyWeekend.jpg");
+    background-position:center center;
+    background-size:cover;
+    width:100%;
+    height:40%;
+}
+
+#events div#eventpic6{
+    background-image: url("../images/BunnyYoga.jpg");
+    background-position:center center;
+    background-size:cover;
+    width:100%;
+    height:40%;
+}
+
+#events div.eventinfo{
+    padding:1.5rem;
+}
+
+/*-----------Resources Page-----------*/
+
+#resources article section h2{
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+#resources div.smallcard{
+    margin:0.5rem 0.9% 0.5rem 0.9% ;
+    box-sizing: border-box;
+    position: relative;
+    width:31.5%;
+    height: 20rem;
+    float:left;
+    overflow-y: auto;
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+    z-index: 0;
+}
+
+.cardpic{
+    background-position: top center;
+    background-size: cover;
+    height: 60%;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+#book1{
+    background-image: url(../images/theLastLecture.jpg);
+}
+
+#book2{
+    background-image: url(../images/bookOfMindfulness.jpg);
+}
+
+#book3{
+    background-image: url(../images/giftsOfTheHeart.jpg);
+}
+
+#video1{
+    background-image: url(../images/tryNew.jpg);
+}
+
+#video2{
+    background-image: url(../images/vulnerability.jpg);
+}
+
+#video3{
+    background-image: url(../images/embracing.jpg);
+}
+
+#resources div.smallcard h3{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #000;
+}
+
+#resources div.smallcard h4{
+    font-size: 1rem;
+    text-align: right;
+    color: #000;
+    margin-right: 1rem;
+}
+
+#resources div.smallcard a{
+    font-size: 0.8rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    color: #b0b0b0;
+    text-decoration: none;
+}
+
+#resources .smallcard:hover {
+    -moz-box-shadow:0px 5px 15px #ABABAB; 
+    -webkit-box-shadow:0px 5px 15px #ABABAB; 
+    box-shadow:0px 5px 15px #ABABAB;
+    transform:translateY(-2px);
+    transition: 1s ease;
+}
+
+/*----------stories page----------*/
+
+#card1,
+#card4 {
+    background: linear-gradient(90deg, #aea4e3, #d3ffe8);
+}
+
+#card2,
+#card5 {
+    background: linear-gradient(90deg, #d3ffe8, #ffc5ca);
+}
+
+#card3,
+#card6{
+    background: linear-gradient(90deg, #ffc5ca, #f6edb2);
+}
+
+div.stories p{
+    margin:1rem;
+    font-size: 1rem;
+    margin-top: 2.5rem;
+    line-height: 1.4rem;
+    position: relative;
+    color: #444;
+    font-weight: lighter;
+}
+
+div.fullstories section img{
+    float: right;
+    height: 1.5rem;
+}
+
+div.fullstories section p{
+    margin:1rem;
+    font-size: 1rem;
+    margin-top: 2.5rem;
+    line-height: 1.4rem;
+    position: relative;
+}
+
+em{
+    font-weight: bold;
+}
+
+div.jumbo section {
+    position: fixed;
+    top: 20vh;
+    height: 60vh;
+    width: 50vw;
+    margin-left: 7.5vw;
+    z-index: 10;
+    background: #f4f4f4;
+    padding: 2rem;
+    -moz-box-shadow:0px 5px 15px #ABABAB; 
+    -webkit-box-shadow:0px 5px 15px #ABABAB; box-shadow:0px 5px 15px #ABABAB;
+    transform:translateY(-4px);
+    display:none;
+}
+
+div.jumbo section.view {
+    display: block;
+}
+
+/*-----------contact page-----------*/
+
+
+#contactInfo p{
+    display: block;
+    opacity: 1;
+    position: relative;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: black;
+    font-family: 'Poiret One';
+}
+
+#contact h2{
+    font-size: 1.5rem;
+    font-family: 'Poiret One';
+    color: #fff;
+}
+
+#contactInfo {
+    display: inline-block;
+    width: 35%;
+    float:left;
+    height: auto;
+    margin-left:100px;
+}
+
+
+#contactUs {
+    display: inline-block;
+    width: 35%;
+    height:auto;
+    margin-left:0px;
+    
+}
+
+
+#facebookLogo {
+    width: 40px;
+    height:auto;
+    margin-top: 0.5rem;
+}
+
+/*contact page - contact form */
+/*CITATION: some references from https://codepen.io/matmarsiglio/pen/HLIor*/
+#form {
+  position: relative;
+  width: 30vw;
+  margin-top: 1.5rem;
+  
+  
+}
+
+input {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  width: 28vw;
+  height: 3vw;
+  padding: 0px 15px 0px 15px;
+  background: transparent;
+  outline: black;
+  border: solid 1px #b3aca7;
+  margin-top: 0.6rem;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover,
+textarea:hover{
+  background: white;
+  color: #e2dedb;
+}
+
+textarea {
+    margin-top: 0.6rem;
+      width: 28vw;
+      max-width: 28vw;
+      height: 5vw;
+      max-height: 6vw;
+      padding: 15px;
+      background: transparent;
+      outline: none;
+      color: #726659;
+      font-family: 'Lato', sans-serif;
+      font-size: 0.875em;
+      border: solid 1px #b3aca7;
+      transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+}
+
+
+
+#submit {
+  width: 30vw;
+  padding: 0;
+  font-size: 0.875em;
+  color: #b3aca7;
+  margin-top: 0.6rem;
+  
+  outline:none;
+  cursor: pointer;
+  
+  border: solid 1px #b3aca7;
+  
+  
+}
+
+#submit:hover {
+    background:gray;
+}
+
+/*footers are same to all pages*/
+
+footer{
+    height: 20vh;
+}
+
+footer p{
+    position: relative;
+    text-align: center;
+    padding-top: 10vh;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 450px){
+   
+article {
+    width:100%;
+    margin:0 auto;
+    max-width:450px;
+}
+
+section {
+    margin:0.5rem;
+    padding:1rem;
+}  
+
+/*-----------home page-----------*/
+#can {
+    display: inline-block;
+    width: 90%;
+    float:none;
+    height:150px;
+    text-align: center;
+    margin:1rem auto;
+}
+
+
+#cannot {
+    display: inline-block;
+    width: 90%;
+    height:150px;
+    text-align: center;
+    float:none;
+    margin:1rem auto;
+}
+
+/*-----------about page----------- */
+.aboutsmallcard {
+    margin:0.5rem 0.9% 0.5rem 0.9% ;
+    width:97%;
+    height: 20rem;
+    float:none;
+    overflow-y: auto;
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+    z-index: 0;
+}
+
+#room{
+    width:95%;
+    height: auto;
+    float:none;
+    margin-bottom: 1rem;
+}
+
+.about p{
+    width: 70vw;
+    margin: 0 auto;
+}
+
+/*-----------event page----------- */
+.smallcard {
+    margin:0.5rem 0.9% 0.5rem 0.9% ;
+    width:97%;
+    height: 20rem;
+    float:none;
+    overflow-y: auto;
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+    z-index: 0;
+}  
+
+body#events a{
+    text-decoration: none;
+    color:white;
+}
+
+ 
+/*-----------resource page----------- */ 
+
+#resources div.smallcard{
+    margin:0.5rem 0.9% 0.5rem 0.9% ;
+    width:97%;
+    padding:2rem;
+    box-sizing: border-box;
+    height: 20rem;
+    float:none;
+    overflow-y: auto;
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+    z-index: 0;
+}  
+
+#founder {
+    float:none;
+    margin:1rem;
+    width:95%;
+    margin:0 auto;
+}
+
+
+
+/*homepage responsive*/
+header div#homepageIntro {
+    margin-right: 1vh;
+    margin-top: 32vh;
+}
+
+div#homepageIntro p{
+    font-size: 1.5rem;
+    margin-bottom: 0.1rem;
+    text-align: right;
+}
+
+.home h2 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.home h4 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+#can, #cannot {
+    margin: 0;
+}
+
+#can p,
+#cannot p{
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+}
+
+
+#can ul li,
+#cannot ul li{
+    font-size:0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+
+/*contact responsive*/
+#contactUs {
+    display:block;
+    width:100%;
+}
+
+
+#contactInfo {
+    display: block;
+    width: 100%;
+    margin-left:0px;
+}
+
+
+#facebookLogo {
+    margin-top: 0.5rem;
+}
+
+#form{
+    width:100%;
+    margin-top:0;
+    
+}
+
+input {
+    width:80%;
+    height:7vh;
+}
+
+textarea{
+    width:80%;
+    max-width: 100%;
+    height:20vh;
+    max-height:30vh;
+    
+}
+
+#submit {
+    width:90%;
+}
+/*stories responsive*/
+
+div.jumbo{
+    margin-bottom: 2rem;
+}
+
+div.jumbo section {
+    margin:0 auto;
+    width:90%;
+    position: relative;
+    top: 2vh;
+    height: 180vh;
+    z-index:0;
+    background: #f4f4f4;
+    padding: 1rem;
+    -moz-box-shadow:0px 5px 15px #ABABAB; 
+    -webkit-box-shadow:0px 5px 15px #ABABAB; box-shadow:0px 5px 15px #ABABAB;
+    transform:translateY(-4px);
+    display:none;
+}
+
+div.jumbo section p{
+    font-size: 0.8rem;
+}
+
+.stories p{
+    font-size: 0.8rem;
+    line-height: 1rem;
+}
+
+/*navigation responsive*/
+
+/*header stuff */
+header {
+    background-size: 100%;
+    background-position: 0px 0px;
+    height:48vh;
+}
+
+header div#navigation{
+    padding-top :0;
+    opacity: 0.8;
+
+}
+/*header div#navigation {*/
+/*    width:100%;*/
+/*    height:35vh;*/
+/*    padding:0;*/
+/*}*/
+
+header div img {
+    margin: 0 auto 1rem auto;
+    float:left;
+    position: cover;
+    width: 30vw;
+    display:inline-block;
+}
+
+header div nav {
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+}
+
+header nav ul li{
+    display: none;
+}
+
+.icon{
+    float: right;
+    display: inline-block;
+    margin: 1rem 2rem;
+    border-bottom: none;
+}
+
+ul.responsive{
+    position: relative;
+    width:100%;
+}
+
+ul.responsive li.icon{
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-bottom:none;
+    z-index:100;
+}
+
+ul.responsive li{
+    display: block;
+    float: none;
+    /*width: 100%;*/
+    height: 1.3rem;
+    padding: 0.8rem;
+    background-color: #000;
+}
+
+ul.responsive li a{
+    /*font-size: 1rem;*/
+    /*font-weight: bolder;*/
+    display: block;
+    text-align: center;
+}
+
+header div#homepageIntro{
+    float: left;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 28vh; 
+    margin-bottom: 5vh;
+    height:auto;
+    width: 95%;
+}
+
+header div#homepageIntro p{
+    opacity: 0.6;
+    float: none;
+    position: relative;
+    font-size: 1rem;
+    color: #fff;
+    z-index: 0.1;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+}
+
+header .subpageIntro{
+    float: left;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 43vh; 
+    margin-bottom: 5vh;
+    height:auto;
+    width: 95%;
+}
+
+header .subpageIntro p{
+    opacity: 1;
+    position: relative;
+    font-size: 1rem;
+    color: white;
+    z-index: 1;
+    font-family: 'Poiret One', cursive;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+}
+
+header nav ul li a {
+    text-align:center;
+    margin-right:0;
+}
+/*footer responsive*/
+
+footer p {
+    padding-top: 5vh;
+}
+}
+
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+/*homepage tablet responsive*/
+header div#homepageIntro {
+    margin-right: 5vh;
+    margin-top: 38vh;
+}
+
+div#homepageIntro p{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+#cannot,#can{
+    margin:0;
+}
+
+#can {
+    margin-left:10vw;
+}
+
+header .subpageIntro{
+    width:50vw;
+    margin-right: 5vh;
+    margin-top: 30vh; 
+    margin-bottom: 5vh;
+}
+
+article {
+    width:100%;
+    margin:0 auto;
+}
+
+section {
+    margin:0.5rem;
+    padding:1rem;
+}  
+
+header {
+    height: 50vh;
+    background-position: 0px 0px;
+    background-size: 100%;
+
+}
+
+.aboutsmallcard {
+    width:97%;
+    height: 20rem;
+    float:none;
+    overflow-y: auto;
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+    z-index: 0;
+}
+
+.about {
+    width:90%;
+}
+
+/*contact responsive*/
+
+
+
+input {
+    
+    height:3vh;
+}
+
+textarea{
+  
+    height:15vh;
+    max-height:30vh;
+    
+}
+
+
+
+
+}
